@@ -1,0 +1,15 @@
+./sources/simplescp1_2_parser.js:232: TypeError: undefined is not a function
+  return new languageOperators[name](arguments);
+         ^
+TypeError: undefined is not a function
+    at parseLanguageOperator (./sources/simplescp1_2_parser.js:232:10)
+    at parseCallExpression (./sources/simplescp1_2_parser.js:222:12)
+    at parseExpressionStatement (./sources/simplescp1_2_parser.js:198:14)
+    at parseStatement (./sources/simplescp1_2_parser.js:157:48)
+    at parseBlockStatement (./sources/simplescp1_2_parser.js:212:39)
+    at parseStatement (./sources/simplescp1_2_parser.js:159:14)
+    at parseIfStatement (./sources/simplescp1_2_parser.js:178:43)
+    at parseStatement (./sources/simplescp1_2_parser.js:163:14)
+    at parseBlockStatement (./sources/simplescp1_2_parser.js:212:39)
+    at parseFunction (./sources/simplescp1_2_parser.js:131:45)
+

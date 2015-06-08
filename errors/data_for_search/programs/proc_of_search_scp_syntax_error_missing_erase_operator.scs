@@ -1,0 +1,88 @@
+scp_program -> proc_of_search_scp_error_missing_erase_operator (*
+    -> rrel_params: ... (*
+        -> rrel_1: rrel_in: _scp_program;;
+    *);;
+    -> rrel_operators: ... (*
+        ->rrel_init: ..operator63828 (*
+            <- searchElStr5;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _scp_program;;
+            -> rrel_2: rrel_scp_var: rrel_assign: _tmp_arc1;;
+            -> rrel_3: rrel_scp_var: rrel_assign: _operators;;
+            -> rrel_4: rrel_scp_var: rrel_assign: _tmp_arc2;;
+            -> rrel_5: rrel_fixed: rrel_scp_const: rrel_operators;;
+            => nrel_goto: ..operator8192;;
+        *);;
+        ->..operator8192 (*
+            <- searchSetStr3;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _operators;;
+            -> rrel_2: rrel_scp_var: rrel_assign: rrel_pos_const_perm: _tmp_arc;;
+            -> rrel_3: rrel_scp_var: rrel_assign: _operator;;
+            -> rrel_set_3: rrel_scp_var: rrel_assign: _operator_set;;
+            => nrel_goto: ..operator1176;;
+        *);;
+        ->..operator1176 (*
+            <- searchElStr3;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _operator_set;;
+            -> rrel_2: rrel_scp_var: rrel_assign: _arc;;
+            -> rrel_3: rrel_scp_var: rrel_assign: _operator;;
+            => nrel_then: ..operator37406;;
+            => nrel_else: ..operator3500;;
+        *);;
+        ->..operator37406 (*
+            <- sys_search;;
+            -> rrel_1: rrel_fixed: rrel_scp_const: scp_error_missing_erase_operator_pattern_1;;
+            -> rrel_2: rrel_scp_var: rrel_assign: _result;;
+            -> rrel_3: rrel_fixed: rrel_scp_const: scp_error_missing_erase_operator_parameters;;
+            -> rrel_4: rrel_scp_var: rrel_assign: _result111;;
+            => nrel_goto: ..operator65063;;
+        *);;
+        ->..operator65063 (*
+            <- ifVarAssign;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+            => nrel_then: ..operator1780;;
+            => nrel_else: ..operator16846;;
+        *);;
+        ->..operator1780 (*
+            <- printEl;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _result111;;
+            => nrel_goto: ..operator64196;;
+        *);;
+        ->..operator64196 (*
+            <- sys_search;;
+            -> rrel_1: rrel_fixed: rrel_scp_const: scp_error_missing_erase_operator_pattern_2;;
+            -> rrel_2: rrel_scp_var: rrel_assign: _result;;
+            -> rrel_3: rrel_fixed: rrel_scp_const: scp_error_missing_erase_operator_parameters;;
+            => nrel_goto: ..operator23073;;
+        *);;
+        ->..operator23073 (*
+            <- ifVarAssign;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _result;;
+            => nrel_else: ..operator28032;;
+            => nrel_then: ..operator16846;;
+        *);;
+        ->..operator28032 (*
+            <- call;;
+            -> rrel_1: rrel_fixed: rrel_scp_const: proc_generate_scp_error;;
+            -> rrel_2: ... (*
+                -> rrel_1: rrel_fixed: rrel_scp_var: _scp_program;;
+                -> rrel_2: rrel_fixed: rrel_scp_const: scp_error_missing_erase_operator;;
+            *);;
+            -> rrel_3: rrel_assign: rrel_scp_var: _argument4934;;
+            => nrel_goto: ..operator4685;;
+        *);;
+        ->..operator4685 (*
+            <- waitReturn;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _argument4934;;
+            => nrel_goto: ..operator16846;;
+        *);;
+        ->..operator16846 (*
+            <- eraseEl;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc;;
+            => nrel_goto: ..operator1176;;
+        *);;
+        ->..operator3500 (*
+            <- return;;
+        *);;
+    *);;
+*);;
+  scp_error_missing_erase_operator_parameters    -> ... (*     -> rrel_1: rrel_fixed: rrel_scp_const: _target_operator;;     -> rrel_2: rrel_fixed: rrel_scp_var: _operator;;   *);;
